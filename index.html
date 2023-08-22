@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body ondragstart="return false;" ondrop="return false;">
+    <h1>Etch-a-Sketch</h1>
+    <div class="container">
+        <div class="buttonsLeft">
+            <button class="button" id="draw">Draw</button>
+            <button class="button" id="colorPicker"><input type="color" value="#9c2b2b" id="colorSelector"><div id = "pickme">Pick me</div></button>
+            <button class="button" id="randomColor"> Random color </button>
+            <button class="button" id="eraser"> Eraser </button>
+        </div>
+        <!-- <div id="container"> -->
+        <div id="game"></div>
+        <!-- </div> -->
+        <div class="buttonsRight">
+            <button class="button" id = "remove">Remove</button>
+            <button class="button" id = "grid"> Grid On/Off </button>
+            <div class="slidecontainer">
+                <div>Grid size</div>
+                <input type="range" min="0" max="100" value="1" class="slider" id="myRange" step="20">
+            </div>
+
+        </div>
+    </div>
+    <div id="colorRemember">
+    </div>  
+    <script src="java.js"></script>
+</body>
+</html>
