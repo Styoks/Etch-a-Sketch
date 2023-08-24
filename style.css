@@ -1,28 +1,29 @@
 body {
-    background-color: rgb(208, 221, 232);
+    background-color: #EDEDED;
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .container {
     justify-content:center;
     align-items: center;
     display: flex;
-    border: 3px solid rgb(0, 0, 0);
     gap: 10px;
     
 } 
 
 #game {
-    border: 3px solid rgb(0, 0, 0);
     height: 500px;
     width: 500px;
     display: flex;
     justify-content: center;
+
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .buttonsLeft {
@@ -30,7 +31,6 @@ h1 {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border: 3px solid rgb(0, 0, 0);
     
 }
 
@@ -39,23 +39,30 @@ h1 {
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    border: 3px solid rgb(0, 0, 0);
     
 }
 
 .button {
+    font: initial;
     height: 30px;
     width: 150px;
     border-style: none;
     margin: 10px 0px;
-    background-color: white;
+    background-color: #EDEDED;
     -webkit-transition: .2s;
+    transition: box-shadow .2s;
     transition: background-color .2s;
     padding: 0;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-style:normal;
+    border-radius: 5px;
+    border: 1px solid grey;
 }
-
 .button:hover{
-    background-color: #9aaaa4;
+    background-color: rgb(214, 214, 214);;
+    box-shadow:rgba(0, 0, 0, 0.7) 0px 3px 8px;
 }
 
 .slidecontainer {
@@ -63,24 +70,35 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: #EDEDED;
     width: 150px;
     height: 50px;
     margin: 10px 0px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    font-style:normal;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.slidecontainer:hover{
+    box-shadow:rgba(0, 0, 0, 0.7) 0px 3px 8px;
 }
 
 
 .colorCheckerBox {
     width: 20px;
     height: 20px;
-    border: 1px solid rebeccapurple;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3px;
 }
 
 #colorRemember {
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    gap: 3px;
+    gap: 5px;
 }
 
 #colorSelector{
@@ -108,4 +126,28 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.buttonClicked {
+    background-color: #cbcbcb;
+}
+
+#drawingRemember {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+#drawingRemember > *{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
 }
